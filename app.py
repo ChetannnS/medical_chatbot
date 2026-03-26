@@ -6,7 +6,7 @@ import io
 import base64
 
 # ── YOUR GEMINI API KEY (paste it here) ──────────────────────────────────────
-GEMINI_API_KEY = "AIzaSyCt92VmEVMZDzUE84FyIXjSzr5QjwOHRpw"   # 👈 Replace this with your actual key
+GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]   # 👈 Replace this with your actual key
 # ─────────────────────────────────────────────────────────────────────────────
 
 genai.configure(api_key=GEMINI_API_KEY)
